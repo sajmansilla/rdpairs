@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.rd.pairs.RomeoDeltaPairsApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.284 sec - in com.rd.pairs.RomeoDeltaPairsApplicationTests

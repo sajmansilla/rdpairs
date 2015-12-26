@@ -1,7 +1,7 @@
 package com.rdpairs.controllers;
 
+import com.rdpairs.dao.DeltenPlayerDAO;
 import com.rdpairs.models.DeltenPlayer;
-import com.rdpairs.models.DeltenPlayerDAO;
 
 import java.util.ArrayList;
 

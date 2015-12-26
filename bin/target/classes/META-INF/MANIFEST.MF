@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-Title: RomeoDeltaPairs
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.rd.pairs
+Build-Jdk: 1.7.0_80
+Built-By: ianmichel
+Created-By: Maven Integration for Eclipse
+
