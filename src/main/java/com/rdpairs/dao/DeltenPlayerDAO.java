@@ -12,4 +12,6 @@ import com.rdpairs.models.DeltenPlayer;
 public interface DeltenPlayerDAO extends CrudRepository<DeltenPlayer, Long> {
 	
 	public ArrayList<DeltenPlayer> findAll();
+	
+	public ArrayList<DeltenPlayer> findByBatman(boolean batman);
 }
