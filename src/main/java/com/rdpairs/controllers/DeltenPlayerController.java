@@ -4,14 +4,13 @@ import com.rdpairs.dao.DeltenPlayerDAO;
 import com.rdpairs.models.DeltenPlayer;
 
 import java.util.ArrayList;
-import java.util.Queue;
-import java.util.Random;
 
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -20,7 +19,7 @@ public class DeltenPlayerController {
 	
 	@Autowired
 	private DeltenPlayerDAO deltenPlayerDAO;
-  
+
 	/**
 	* /get_players  --> Return all the players
 	* 
@@ -38,7 +37,7 @@ public class DeltenPlayerController {
 	    }
 	    return lPlayers;
 	}
-	
+
 	/**
 	* /get_pairs  --> Return all the players
 	* 
@@ -74,6 +73,24 @@ public class DeltenPlayerController {
 	    }
 
 		return json.toString();
+	}
+
+	/**
+	* /create_sprint  --> Return status
+	* 
+	* @return Status
+	*/
+	@RequestMapping(produces = MediaType.APPLICATION_JSON_VALUE, value="/get_pairs", method = RequestMethod.POST)
+	@ResponseBody
+	public String createSprint(
+		@RequestParam (value="startDate") String startDate,
+		@RequestParam(value ="endDate") String endDate,
+		@RequestParam(value ="listPlayers") ArrayList<DeltenPlayer> listPlayers,
+		@RequestParam(value ="duration") int duration,
+		@RequestParam(value ="holidayOnSite") int holidayOnSite
+	) {
+		
+		return "";
 	}
 	
 }
